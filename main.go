@@ -69,6 +69,8 @@ func (sender Sender) Send() error {
 
 	msg := "From: " + sender.User + "\n" +
 		"To: " + sender.To + "\n" +
+		"MIME-version: 1.0;\n" +
+		"Content-Type: text/html; charset=\"UTF-8\"\n" +
 		"Subject: " + sender.Subject + "\n\n" +
 		string(sender.Body)
 
