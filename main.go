@@ -66,7 +66,6 @@ type Sender struct {
 }
 
 func (sender Sender) Send() error {
-
 	msg := "From: " + sender.User + "\n" +
 		"To: " + sender.To + "\n" +
 		"MIME-version: 1.0;\n" +
