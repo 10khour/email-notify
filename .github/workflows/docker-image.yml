@@ -14,9 +14,7 @@ jobs:
         stable: 'true'
         go-version: '^1.13.1'
     - name: build
-      run: 
-        - go get github.com/mitchellh/gox
-        - gox
+      run:  go get github.com/mitchellh/gox && gox
   release:
     runs-on: ubuntu-latest
     needs: [build]
