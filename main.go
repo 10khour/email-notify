@@ -27,7 +27,7 @@ func init() {
 	flag.StringVar(&host, "smtp-server", "smtp.gmail.com", "smtp server host")
 	flag.IntVar(&port, "smtp-port", 587, "smtp server port")
 	flag.StringVar(&pass, "smtp-pass", "smtp.gmail.com", "smtp server host")
-	flag.StringVar(&user, "user", "hellojukay@gmail.com", "your email")
+	flag.StringVar(&user, "smtp-user", "hellojukay@gmail.com", "your email")
 	flag.StringVar(&to, "to", "xxx@gmail.com,yyy@gmail.com", "target email")
 	flag.StringVar(&emailFile, "path", "mail.txt", "email body path")
 	flag.StringVar(&subject, "subject", "Hello there", "email subject")

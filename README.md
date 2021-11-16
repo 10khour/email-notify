@@ -12,8 +12,8 @@ stages:
   
 send email:
   stage: notify
-  image: hellojukay/email:1.0.1
+  image: hellojukay/email:1.0.2
   script:
     # 发送邮件的代码参考 https://github.com/hellojukay/notify
-    - notify -smtp-port=587 -smtp-server=mail.xxx.com -user=$EMAIL_USER  -to=$RECEIVER -smtp-pass=$EMAAL_PASS -path=email.html
+    - notify -smtp-port=587 -smtp-server=mail.xxx.com -smtp-user=$EMAIL_USER  -to=$RECEIVER -smtp-pass=$EMAAL_PASS -path=email.html
 ```
