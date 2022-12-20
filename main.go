@@ -12,7 +12,9 @@ import (
 	"github.com/namsral/flag"
 )
 
-var sender Sender
+var (
+	sender Sender
+)
 
 func init() {
 	var (
@@ -47,6 +49,7 @@ func init() {
 		Subject: subject,
 	}
 }
+
 func main() {
 	if err := sender.Send(); err != nil {
 		log.Printf("认证邮件服务器 %s 失败，检查帐号密码正确性,%s", fmt.Sprintf("%s:%d", sender.Host, sender.Port), err)
