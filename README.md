@@ -3,7 +3,7 @@
 
 # 安装
 ```
-go get github.com/hellojukay/notify
+go get github.com/hellojukay/notify@latest
 ```
 gitlab pipeline 设置如下
 ```yaml
